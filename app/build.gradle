@@ -37,6 +37,15 @@ android {
     buildFeatures {
         viewBinding true
     }
+    ndkVersion '17.2.4988734'
+
+    packagingOptions {
+        pickFirst '**/*.so'
+        pickFirst 'lib/x86/libc++_shared.so'
+        pickFirst 'lib/x86_64/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+    }
 
     // libuvc module should need set local.properties
     // eg: ndk.dir=D\:\\Developer\\Environment\\AndroidSdks\\ndk\\21.0.6113669
@@ -69,5 +78,5 @@ dependencies {
     implementation project(':libausbc')
 
     // demo
-//    implementation 'com.github.jiangdongguo.AndroidUSBCamera:libausbc:3.3.3'
+    implementation 'com.github.jiangdongguo.AndroidUSBCamera:libausbc:3.3.3'
 }
