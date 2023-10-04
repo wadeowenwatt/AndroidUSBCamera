@@ -431,7 +431,7 @@ class CameraUVC(ctx: Context, device: UsbDevice) : MultiCameraClient.ICamera(ctx
      */
     fun getBrightness() = mUvcCamera?.brightness
     
-    fun getBrightnessMax() = mUvcCamera?.brightnessMax
+//    fun getBrightnessMax() = mUvcCamera?.brightnessMax
 
     fun getBrightnessMin() = mUvcCamera?.brightnessMin
     

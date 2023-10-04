@@ -630,9 +630,9 @@ public class UVCCamera {
     	}
     }
 
-	public synchronized int getBrightnessMax() {
-		return mBrightnessMax;
-	}
+//	public synchronized int getBrightnessMax() {
+//		return mBrightnessMax;
+//	}
 
 	public synchronized int getBrightnessMin() {
 		return mBrightnessMin;
